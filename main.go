@@ -24,7 +24,7 @@ func NewEchoServer(lc fx.Lifecycle, cfg *config.Config) *echo.Echo {
 
 	public(e)
 	// health check
-	e.GET("/", func(c echo.Context) error {
+	e.GET("/health", func(c echo.Context) error {
 		return c.String(200, "Healthy")
 	})
 

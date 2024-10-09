@@ -16,7 +16,7 @@ func (h *FooHandler) registerRoutes(e *echo.Group) {
 }
 
 func (h *FooHandler) basePath() string {
-	return "/foo"
+	return "/"
 }
 
 func Bar(c echo.Context) error {

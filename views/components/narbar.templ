@@ -1,0 +1,20 @@
+package components
+
+templ Navbar(logged bool) {
+	<div class="bg-slate-200 shadow-lg p-4 mb-5">
+		<nav class="container mx-auto flex flex-row justify-between items-center">
+			<a href="/" class="text-3xl font-black text-slate-900">TOGOS</a>
+			<div>
+				if (logged) {
+					<a href="/logout" class="text-slate-900 hover:text-slate-700 text-center flex flex-row justify-center items-center">
+						<i class="fa-solid fa-right-from-bracket"></i><span class="ml-2 text-lg">Logout</span>
+					</a>
+				} else {
+					<button type="button" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium tracking-wide text-white transition-colors duration-200 rounded-3xl bg-neutral-950 hover:bg-neutral-900 focus:ring-0">
+						Login
+					</button>
+				}
+			</div>
+		</nav>
+	</div>
+}

@@ -1,9 +1,15 @@
 package foo
 
-import "github.com/ADahjer/togos/views/layouts"
+import (
+	"github.com/ADahjer/togos/views/components"
+	"github.com/ADahjer/togos/views/layouts"
+)
 
 templ Index() {
 	@layouts.App() {
-		<h1 class="fw-bold text-3xl text-center">Hello, World!!!!</h1>
+		@components.Navbar(false)
+		<div class="container mx-auto">
+			<h1 class="fw-bold text-3xl text-center">Hello, World!!!!</h1>
+		</div>
 	}
 }

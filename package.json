@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others \"make templ\" \"make css\" \"air\""
+  }
+}

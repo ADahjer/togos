@@ -1,0 +1,50 @@
+# Golang specific
+/bin/
+/pkg/
+/vendor/
+/tmp/
+
+# Compiled binary
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Golang test binary
+*.test
+
+# Go templ files
+/views/**/*_templ.*
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Templ specific
+*.tmpl.out
+
+# TailwindCSS and Node specific
+node_modules/
+/public/
+
+# TailwindCSS cache and temp files
+*.css.map
+*.css.tmp
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# macOS specific files
+.DS_Store
+
+# IDE specific
+.idea/
+.vscode/
+
+# Other backups
+*.bak
+*.swp
+*.swo
